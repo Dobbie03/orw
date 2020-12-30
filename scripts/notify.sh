@@ -263,5 +263,5 @@ padding_font="<span font='${font:-Roboto Mono} ${padding_height-6}'>\n</span>"
 font="Roboto Mono ${font_size:-8}"
 offset="<span font='$font'>$(printf "%-${offset_count-10}s")</span>"
 
-dunstify $image -t $((time * 1000)) $replace 'summery' \
+dunstify $image -t $((time * 1000)) $replace 'summary' \
 	"$padding_font<span font='$font'>$padding$offset${message//\\n/$offset\\n$offset}$offset$padding</span>$bottom_padding"
